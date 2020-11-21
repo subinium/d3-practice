@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Components</title>
+  </head>
+  <body>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <svg>
+      <line x1="0" y1="0" x2="10" y2="10" stroke="black"></line>
+    </svg>
+    <svg>
+      <!-- 시작점은 top left를 기준으로 함-->
+      <!-- 사각형 -->
+      <rect x="0" y="0" width="10" height="10"></rect>
+    </svg>
+    <svg>
+      <!-- 원 -->
+      <circle cx="5" cy="5" r="5"></circle>
+    </svg>
+    <svg>
+      <!-- 타원 -->
+      <ellipse cx="10" cy="5" rx="10" ry="5"></ellipse>
+    </svg>
+    <svg>
+      <!-- 다각형 -->
+      <polygon points="0,0 10,5 20,0 20,20 10,15 0,20"></polygon>
+    </svg>
+    <svg>
+      <!-- 다각형 -->
+      <polyline points="0,0 10,5 20,0 20,20 10,15 0,20"></polyline>
+    </svg>
+    <svg>
+      <!-- https://www.w3schools.com/graphics/svg_path.asp -->
+      <!-- M = moveto 
+        L = lineto
+        H = horizontal lineto
+        V = vertical lineto
+        C = curveto
+        S = smooth curveto
+        Q = quadratic Bézier curve
+        T = smooth quadratic Bézier curveto
+        A = elliptical Arc
+        Z = closepath -->
+      <path d="M65,10 a50,25 0 1,0 50,25"></path>
+    </svg>
+  </body>
+</html>
